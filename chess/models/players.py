@@ -37,6 +37,8 @@ class Player:
     # elo = nombre de pts
     # date naissance -> on choisit notre format J/M/A (dates str to time)
     # Envoyer erreur si l'utilisateur ne rentre pas bien sa date de naissance
+    # score a enlevé
+    # pas besoin d'identifiant
 
     # pour les controles --> ajouter une fonction en dehors de la classe du modèle pour un "None" si besoin de control (puis modif MVC)
     def __str__(self):

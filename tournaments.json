@@ -1,0 +1,18 @@
+{
+    "tournaments": {
+        "1": {
+            "date": "",
+            "description": "",
+            "lieu": "",
+            "nom": "test tournois",
+            "players": [
+                "ezaezaeza",
+                "juin",
+                "a",
+                "test "
+            ],
+            "rounds": [],
+            "type de contr\u00f4le de temps": ""
+        }
+    }
+}

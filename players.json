@@ -26,6 +26,24 @@
             "name": "a",
             "score": "a",
             "sex": "a"
+        },
+        "4": {
+            "birthday": "10/10/1991",
+            "elo": "e",
+            "first_name": "e",
+            "identifiant": "",
+            "name": "test ",
+            "score": "e",
+            "sex": "e"
+        },
+        "5": {
+            "birthday": "10/10/1999",
+            "elo": "",
+            "first_name": "",
+            "identifiant": "",
+            "name": "tty",
+            "score": "",
+            "sex": "e"
         }
     }
 }

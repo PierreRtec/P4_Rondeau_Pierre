@@ -16,5 +16,7 @@ class ManageTournamentC:
         elif choice == "2":
             return "listtournaments"
         elif choice == "3":
+            return "checker"
+        elif choice == "4":
             return "deletetournament"
         return "homepage"
