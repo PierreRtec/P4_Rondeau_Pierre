@@ -4,7 +4,7 @@ from chess.views.createplayer import CreatePlayer
 from chess.models.players import Player
 
 class CreatePlayerC:
-
+# test
     def __init__(self, data):
         self.data = data
 
