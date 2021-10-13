@@ -2,7 +2,7 @@
 
 from chess.views.createplayer import CreatePlayer
 from chess.models.players import Player
-# testttttt
+
 class CreatePlayerC:
 
     def __init__(self, data):
