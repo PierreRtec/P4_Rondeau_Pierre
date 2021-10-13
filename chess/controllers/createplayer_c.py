@@ -21,4 +21,4 @@ class CreatePlayerC:
         createplayer_view.home(code_return)
         return "manageplayer"
 
-        # test
+        
