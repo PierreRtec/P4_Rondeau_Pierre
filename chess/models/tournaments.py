@@ -23,7 +23,6 @@ class Tournament:
     def prop_tournaments(self):
         return ('nom', 'lieu', 'date', 'type de contrôle de temps', 'description')
     # contrôle de temps soit blitz / bullet / rapid 
-    # temp del 'joueurs', 
 
     def __str__(self):
         name_str = "nom du tournoi : {}\n".format(self.nom)

@@ -17,6 +17,8 @@ class CreatePlayer:
             player[player_prop] = value
         return player
 
+# controle de saisie
+
     def home(self, code_return):
         player = {}
         if code_return in (1,2):
