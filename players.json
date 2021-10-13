@@ -1,0 +1,31 @@
+{
+    "players": {
+        "1": {
+            "birthday": "",
+            "elo": "a",
+            "first_name": "eza",
+            "identifiant": "a",
+            "name": "ezaezaeza",
+            "score": "a",
+            "sex": "a"
+        },
+        "2": {
+            "birthday": "",
+            "elo": "",
+            "first_name": "",
+            "identifiant": "",
+            "name": "juin",
+            "score": "",
+            "sex": ""
+        },
+        "3": {
+            "birthday": "1/1/1991",
+            "elo": "a",
+            "first_name": "a",
+            "identifiant": "a",
+            "name": "a",
+            "score": "a",
+            "sex": "a"
+        }
+    }
+}

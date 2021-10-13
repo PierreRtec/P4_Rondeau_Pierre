@@ -1,4 +1,13 @@
 from tinydb import Query, TinyDB
+from datetime import datetime 
+
+
+def valid_dob(test):
+    try:
+        date = datetime.strptime(test,"%d/%m/%Y")
+    except: return False    
+    return True
+
 
 class Player:
     """ 
@@ -17,17 +26,19 @@ class Player:
 
 
     def __init__(self, **kwargs):
-        for property in self.my_properties():
+        for property,prop_control in self.my_properties():
             setattr(self, property, kwargs.get(property, ""))
 
 
     @classmethod
     def my_properties(self):
-        return (('name',None), ('first_name',None), ('birthday',None), ('sex',None), ('elo',None), ('score',None), ('identifiant',None))
+        return (('name',None), ('first_name',None), ('birthday',valid_dob), ('sex',None), ('elo',None), ('score',None), ('identifiant',None))
     # partir du elo pas du score + supprimer score des propriétées
     # elo = nombre de pts
     # date naissance -> on choisit notre format J/M/A (dates str to time)
     # Envoyer erreur si l'utilisateur ne rentre pas bien sa date de naissance
+
+    # pour les controles --> ajouter une fonction en dehors de la classe du modèle pour un "None" si besoin de control (puis modif MVC)
     def __str__(self):
         return "nom joueur : {}\n".format(self.name)
 
@@ -91,7 +102,7 @@ class Player:
 
     def serialize_player(self):
         data = {}
-        for property in self.my_properties():
+        for property,prop_control in self.my_properties():
             data [property] = getattr(self, property)
         return data 
 
