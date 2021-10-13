@@ -11,7 +11,7 @@ class Round:
         self.players.sort(key = lambda player: player.elo)
         for player in self.players:
             player.score = 0
-        # MAJ
+        
         self.rmatchs = []
 
     def __str__(self):
