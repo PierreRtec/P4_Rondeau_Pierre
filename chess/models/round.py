@@ -4,28 +4,26 @@ from chess.models.players import Player
 
 class Round:
     
-    def __init__(self, players):
+    def __init__(self, tournament):
 
-        self.players = players
-        self.rounds = []
+        self.players = tournament.players
+        self.rmatchs = tournament.rounds
         self.players.sort(key = lambda player: player.elo)
         for player in self.players:
             player.score = 0
-        
-        self.rmatchs = []
-
+     
     def __str__(self):
 
-        all_match = self.oround.rmatchs
+        all_match = self.rmatchs
         name_str = "liste des matchs : \n"
         for player_one, player_two, result in all_match:
-            name_str += "{} vs {}".format(player_one, player_two)
+            name_str += "{} vs {}\n".format(player_one, player_two)
             if result == 1:
-                name_str += "{} gagne".format(player_one)
+                name_str += "{} gagne \n".format(player_one)
             elif result == 2:
-                name_str += "{} gagne".format(player_two)
+                name_str += "{} gagne \n".format(player_two)
             else:
-                name_str += "égalité"
+                name_str += " égalité \n"
         return name_str
 
     def gen_match(self):
@@ -45,4 +43,10 @@ class Round:
             else:
                 match[0].score =+ 0.5
                 match[1].score =+ 0.5
-            self.rmatch.append((match[0].name,match[1].name,winner))
+            self.rmatchs.append((match[0].name,match[1].name,winner))
+    
+
+    
+    def serialize_round(self):
+
+        return self.rmatchs

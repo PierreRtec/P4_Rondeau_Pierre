@@ -11,6 +11,7 @@ from chess.controllers.checker_c import CheckerC
 from chess.controllers import *
 
 
+
 menu_principal = {
     "homepage": HomepageC,
     "manageplayer": ManagePlayerC, 
@@ -21,7 +22,7 @@ menu_principal = {
     "createtournament" : CreateTournamentC,
     "listtournaments" : ListTournamentsC,
     "deletetournament" : DeleteTournamentC,
-    "checker" : CheckerC,
+    "tourn_cours" : ManageRoundC,
 }
 
 class ChessProgram:

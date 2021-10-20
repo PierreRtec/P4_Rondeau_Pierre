@@ -25,3 +25,11 @@ class ManageRound:
         for player in players:
             print("nom : {}".format(player.name))
             new_elo = input("nouveau elo :")
+            dict_elo[player.name] = int(new_elo)
+        return dict_elo
+
+    def display(self):
+
+        if len(self.oround.rmatchs) == 4:
+            print("Tournoi terminé")
+        print(self.oround)

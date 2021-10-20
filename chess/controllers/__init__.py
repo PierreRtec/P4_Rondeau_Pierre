@@ -7,3 +7,4 @@ from .createtournament_c import CreateTournamentC
 from .managetournaments_c import ManageTournamentC
 from .listtournaments_c import ListTournamentsC
 from .deletetournament_c import DeleteTournamentC
+from .manageround_c import ManageRoundC

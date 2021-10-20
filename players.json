@@ -1,49 +1,36 @@
 {
     "players": {
         "1": {
-            "birthday": "",
-            "elo": "a",
-            "first_name": "eza",
-            "identifiant": "a",
-            "name": "ezaezaeza",
-            "score": "a",
-            "sex": "a"
+            "birthday": "10/10/2022",
+            "elo": 0,
+            "first_name": "d",
+            "name": "Michel",
+            "score": 0,
+            "sex": "d"
         },
         "2": {
-            "birthday": "",
-            "elo": "",
-            "first_name": "",
-            "identifiant": "",
-            "name": "juin",
-            "score": "",
-            "sex": ""
+            "birthday": "10/11/1020",
+            "elo": 0,
+            "first_name": "d",
+            "name": "Thierry",
+            "score": 0,
+            "sex": "d"
         },
         "3": {
-            "birthday": "1/1/1991",
-            "elo": "a",
-            "first_name": "a",
-            "identifiant": "a",
-            "name": "a",
-            "score": "a",
-            "sex": "a"
+            "birthday": "10/12/1222",
+            "elo": 0,
+            "first_name": "d",
+            "name": "Mid",
+            "score": 0,
+            "sex": "d"
         },
         "4": {
-            "birthday": "10/10/1991",
-            "elo": "e",
-            "first_name": "e",
-            "identifiant": "",
-            "name": "test ",
-            "score": "e",
-            "sex": "e"
-        },
-        "5": {
-            "birthday": "10/10/1999",
-            "elo": "",
-            "first_name": "",
-            "identifiant": "",
-            "name": "tty",
-            "score": "",
-            "sex": "e"
+            "birthday": "10/10/1111",
+            "elo": 0,
+            "first_name": "d",
+            "name": "Tad",
+            "score": 0,
+            "sex": "d"
         }
     }
 }

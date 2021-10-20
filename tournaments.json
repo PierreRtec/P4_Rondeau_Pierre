@@ -1,18 +1,39 @@
 {
     "tournaments": {
         "1": {
-            "date": "",
-            "description": "",
-            "lieu": "",
-            "nom": "test tournois",
+            "date": "today",
+            "description": "description",
+            "lieu": "ici",
+            "nom": "Tournois init",
             "players": [
-                "ezaezaeza",
-                "juin",
-                "a",
-                "test "
+                "Michel",
+                "Thierry",
+                "Mid",
+                "Tad"
             ],
-            "rounds": [],
-            "type de contr\u00f4le de temps": ""
+            "rounds": [
+                [
+                    "Michel",
+                    "Mid",
+                    "1"
+                ],
+                [
+                    "Thierry",
+                    "Tad",
+                    "1"
+                ],
+                [
+                    "Michel",
+                    "Mid",
+                    "0"
+                ],
+                [
+                    "Thierry",
+                    "Tad",
+                    "1"
+                ]
+            ],
+            "type de contr\u00f4le de temps": "blitz"
         }
     }
 }
