@@ -7,7 +7,7 @@ class Round:
     def __init__(self, tournament):
 
         self.players = tournament.players
-        self.rmatchs = tournament.rounds
+        self.rmatchs = []
         self.players.sort(key = lambda player: player.elo)
         for player in self.players:
             player.score = 0
@@ -26,12 +26,23 @@ class Round:
                 name_str += " égalité \n"
         return name_str
 
-    def gen_match(self):
+    def gen_firstmatch(self):
         
+        players_g = self.players.sort(key = lambda player: player.elo) 
         nb_joueur = len(self.players)
-        players_list_1 = self.players[:nb_joueur // 2]
-        players_list_2 = self.players[nb_joueur // 2:]
+        players_list_1 = players_g[:nb_joueur // 2]
+        players_list_2 = players_g[nb_joueur // 2:]
         self.roundd = zip(players_list_1, players_list_2)
+
+    def gen_nm(self):
+
+        players_g = self.players.sort(key = lambda player: player.score)
+        # nb_joueur = len(self.players)
+        # players_list_1 = players_g[:nb_joueur // 2]
+        # players_list_2 = players_g[nb_joueur // 2:]
+        # self.roundd = zip(players_list_1, players_list_2)
+        # premier contre deuxième si pas jouer ensemble match précédent, ainsi de suite.
+        # MVC puis fini. !!!!!
 
     def set_scores(self, winners):
 
@@ -44,7 +55,6 @@ class Round:
                 match[0].score =+ 0.5
                 match[1].score =+ 0.5
             self.rmatchs.append((match[0].name,match[1].name,winner))
-    
 
     
     def serialize_round(self):

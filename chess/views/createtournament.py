@@ -19,7 +19,7 @@ class CreateTournament:
             value = input('Entrez les informations suivantes: {}\n'.format(tournament_prop))
             tournament[tournament_prop] = value
         listplayers = []
-        while len(listplayers)!=4:
+        while len(listplayers)!=8:
             print("Liste des joueurs parmi ceux proposés :")
             listplayers_view = ListPlayers(self.data)
             choice = listplayers_view.select_player()

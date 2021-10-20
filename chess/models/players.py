@@ -8,6 +8,8 @@ def valid_dob(test):
     except: return False    
     return True
 
+    # valid score à faire
+
 
 class Player:
     """ 

@@ -18,30 +18,27 @@ class ManageRoundC:
         oround = Round(self.tournament)
         round_view = ManageRound(oround)
         round_view.display()
-        if len(oround.rmatchs) < 4:
+        if len(self.tournament.rounds) < 4:
             choice = ""
             while choice not in ("o","n"):
                 choice = input("Lancer un nouveau tour ?")
 
             if choice == "o":
-                if len(oround.rmatchs) == 0:
-                    oround.gen_match()
+                if len(self.tournament.rounds) == 0:
+                    oround.gen_firstmatch() #gen_firstmatch ou gen_match (à faire en plus)
                     winners = round_view.make_round()
                     oround.set_scores(winners)
                 else:
-                    self.tournament.players.sort(key = lambda player: player.score) # regarder tri par elo en cas d'égalité sur le score
+                    self.tournament.players.sort(key = lambda player: player.score)
                     nb_joueur = len(self.tournament.players)
-                    oround.gen_match()
-                    # rmatchs = [] check si on le fait dans le modele
+                    oround.gen_nm()
                     winners = round_view.make_round()
                     oround.set_scores(winners)
                 Player.save_all_players()
-                self.tournament.rounds = oround.serialize_round()
+                self.tournament.rounds.append(oround.serialize_round())
                 Tournament.save_all_tournaments()
-        if len(oround.rmatchs) == 4:
-            
-            # oround.rounds.append(rmatchs)
-            elo = round_view.m_elo(self.tournament.players) # parti du if
+        if len(self.tournament.rounds) == 4:
+            elo = round_view.m_elo(self.tournament.players) 
             for player in self.tournament.players:
                 player.elo = int(elo[player.name])
             Player.save_all_players()
