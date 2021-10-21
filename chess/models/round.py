@@ -28,15 +28,14 @@ class Round:
 
     def gen_firstmatch(self):
         
-        players_g = self.players.sort(key = lambda player: player.elo) 
         nb_joueur = len(self.players)
-        players_list_1 = players_g[:nb_joueur // 2]
-        players_list_2 = players_g[nb_joueur // 2:]
+        players_list_1 = self.players[:nb_joueur // 2]
+        players_list_2 = self.players[nb_joueur // 2:]
         self.roundd = zip(players_list_1, players_list_2)
 
-    def gen_nm(self):
+    # def gen_nm(self):
 
-        players_g = self.players.sort(key = lambda player: player.score)
+        # players_g = self.players.sort(key = lambda player: player.score)
         # nb_joueur = len(self.players)
         # players_list_1 = players_g[:nb_joueur // 2]
         # players_list_2 = players_g[nb_joueur // 2:]
