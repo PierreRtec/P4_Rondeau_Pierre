@@ -48,3 +48,5 @@ class ManageRoundC:
             Player.save_all_players()
             
         return "managetournament"
+
+        # test
