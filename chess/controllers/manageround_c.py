@@ -28,6 +28,10 @@ class ManageRoundC:
                     oround.gen_firstmatch() #gen_firstmatch ou gen_match (à faire en plus)
                     winners = round_view.make_round()
                     oround.set_scores(winners)
+                # elif len(self.tournament.rounds) == 1 < 3:
+                    # oround.gen_nm()
+                    # winners = round_view.make_round()
+                    # oround.set_scores(winners)
                 else:
                     self.tournament.players.sort(key = lambda player: player.score)
                     nb_joueur = len(self.tournament.players)
