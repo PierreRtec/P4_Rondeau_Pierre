@@ -1,10 +1,10 @@
 {
     "tournaments": {
         "1": {
-            "date": "",
-            "description": "",
-            "lieu": "",
-            "nom": "aaaaaaaa",
+            "date": "e",
+            "description": "e",
+            "lieu": "e",
+            "nom": "TEST OMG",
             "players": [
                 "azer",
                 "dddd",
@@ -15,97 +15,8 @@
                 "Thierry",
                 "Michel"
             ],
-            "rounds": [
-                [
-                    [
-                        "azer",
-                        "Tad",
-                        "1"
-                    ],
-                    [
-                        "dddd",
-                        "Mid",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "Thierry",
-                        "1"
-                    ],
-                    [
-                        "test 1",
-                        "Michel",
-                        "1"
-                    ]
-                ],
-                [
-                    [
-                        "azer",
-                        "Tad",
-                        "1"
-                    ],
-                    [
-                        "dddd",
-                        "Mid",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "Thierry",
-                        "1"
-                    ],
-                    [
-                        "test 1",
-                        "Michel",
-                        "1"
-                    ]
-                ],
-                [
-                    [
-                        "azer",
-                        "Tad",
-                        "1"
-                    ],
-                    [
-                        "dddd",
-                        "Mid",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "Thierry",
-                        "1"
-                    ],
-                    [
-                        "test 1",
-                        "Michel",
-                        "1"
-                    ]
-                ],
-                [
-                    [
-                        "azer",
-                        "Tad",
-                        "1"
-                    ],
-                    [
-                        "dddd",
-                        "Mid",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "Thierry",
-                        "1"
-                    ],
-                    [
-                        "test 1",
-                        "Michel",
-                        "1"
-                    ]
-                ]
-            ],
-            "type de contr\u00f4le de temps": ""
+            "rounds": [],
+            "type de contr\u00f4le de temps": "e"
         }
     }
 }

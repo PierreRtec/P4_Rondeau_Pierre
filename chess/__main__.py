@@ -7,7 +7,6 @@ from chess.models.tournaments import Tournament
 from chess.views.createtournament import CreateTournament
 from chess.views.listtournaments import ListTournaments
 from chess.views.deletetournaments import DeleteTournament
-from chess.controllers.checker_c import CheckerC
 from chess.controllers import *
 
 

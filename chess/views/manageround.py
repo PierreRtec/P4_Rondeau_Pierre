@@ -15,6 +15,7 @@ class ManageRound:
             winners.append((match, winner))
         return winners
 
+
     def m_elo(self, players):
         
         dict_elo = {}
