@@ -20,9 +20,11 @@ class CreateTournamentC:
         while code_return in (1,2):
             tournament = createtournament_view.home(code_return)
             players = []
+            tournament["scores"] = {}
             for choice,select_method in tournament["listplayers"]:
                 player = Player.cp_convert(choice, select_method)
                 players.append(player)
+                tournament["scores"][player.name] = 0
             del tournament["listplayers"]
             tournament["players"]=players
             tournament_obj = Tournament(**tournament)

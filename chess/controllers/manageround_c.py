@@ -27,22 +27,16 @@ class ManageRoundC:
                 if len(self.tournament.rounds) == 0:
                     oround.gen_firstmatch() #gen_firstmatch ou gen_match (à faire en plus)
                     winners = round_view.make_round()
-                    oround.set_scores(winners)
-                # elif len(self.tournament.rounds) == 1 < 3:
-                    # oround.gen_nm()
-                    # winners = round_view.make_round()
-                    # oround.set_scores(winners)
+                    oround.set_scores(winners,self.tournament)
                 else:
-                    self.tournament.players.sort(key = lambda player: player.score)
                     nb_joueur = len(self.tournament.players)
                     oround.gen_nm()
                     winners = round_view.make_round()
-                    oround.set_scores(winners)
-                Player.save_all_players()
+                    oround.set_scores(winners,self.tournament)
                 self.tournament.rounds.append(oround.serialize_round())
                 Tournament.save_all_tournaments()
         if len(self.tournament.rounds) == 4:
-            elo = round_view.m_elo(self.tournament.players) 
+            elo = round_view.m_elo(self.tournament.players,self.tournament) 
             for player in self.tournament.players:
                 player.elo = int(elo[player.name])
             Player.save_all_players()

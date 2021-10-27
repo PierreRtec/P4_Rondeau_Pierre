@@ -17,7 +17,7 @@ class Tournament:
             setattr(self, property, kwargs.get(property, ""))
         self.players = kwargs.get("players",[])
         self.rounds = kwargs.get("rounds",[])
-
+        self.scores = kwargs.get("scores",{})
 
     @classmethod
     def prop_tournaments(self):
@@ -75,7 +75,9 @@ class Tournament:
         for player in self.players:
             data["players"].append(player.name)
         data["rounds"] = self.rounds
+        data["scores"] = self.scores
         return data
+    
 
     @classmethod
     def load_tournament(self):

@@ -32,7 +32,7 @@ class Player:
 
     @classmethod
     def my_properties(self):
-        return (('name',None), ('first_name',None), ('birthday',valid_dob), ('sex',None), ('elo',None), ('score',None))
+        return (('name',None), ('first_name',None), ('birthday',valid_dob), ('sex',None), ('elo',None))
     # partir du elo pas du score + supprimer score des propriétées
     # elo = nombre de pts
     # date naissance -> on choisit notre format J/M/A (dates str to time)
