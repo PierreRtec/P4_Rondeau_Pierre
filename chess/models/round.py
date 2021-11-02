@@ -8,13 +8,12 @@ class Round:
 
         self.tournament = tournament
         self.players = tournament.players
-        self.rmatchs = tournament.rounds.copy()
+        self.rmatchs = []
         self.players.sort(key = lambda player: player.elo)
 
-     
     def __str__(self):
 
-        all_match = self.rmatchs
+        all_match = self.tournament.rounds.copy()
         name_str = "liste des matchs : \n"
         for round in all_match:
             for player_one, player_two, result in round:
@@ -56,7 +55,6 @@ class Round:
                 tournament.scores[match[1].name]+=0.5
             self.rmatchs.append((match[0].name,match[1].name,winner))
 
-    
     def serialize_round(self):
 
         return self.rmatchs

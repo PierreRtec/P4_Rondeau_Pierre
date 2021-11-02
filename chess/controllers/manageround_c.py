@@ -33,6 +33,7 @@ class ManageRoundC:
                     oround.gen_nm()
                     winners = round_view.make_round()
                     oround.set_scores(winners,self.tournament)
+                print(oround.serialize_round())
                 self.tournament.rounds.append(oround.serialize_round())
                 Tournament.save_all_tournaments()
         if len(self.tournament.rounds) == 4:
