@@ -1,5 +1,13 @@
 from tinydb import Query, TinyDB
 from chess.models.players import Player
+from datetime import datetime
+
+
+def valid(testt):
+    try:
+        date = datetime.strptime(testt,"%d/%m/%Y")
+    except: return False    
+    return True
 
 
 class Tournament:
@@ -13,7 +21,7 @@ class Tournament:
     tournaments = []
 
     def __init__(self, **kwargs):
-        for property in self.prop_tournaments():
+        for property,prop_control in self.prop_tournaments():
             setattr(self, property, kwargs.get(property, ""))
         self.players = kwargs.get("players",[])
         self.rounds = kwargs.get("rounds",[])
@@ -21,7 +29,7 @@ class Tournament:
 
     @classmethod
     def prop_tournaments(self):
-        return ('nom', 'lieu', 'date', 'type de contrôle de temps', 'description')
+        return (('nom',None), ('lieu',None), ('date',valid), ('type de contrôle de temps',None), ('description',None))
     # contrôle de temps soit blitz / bullet / rapid 
 
     def __str__(self):
@@ -69,7 +77,7 @@ class Tournament:
 
     def serialize_tournament(self):
         data = {}
-        for property in self.prop_tournaments():
+        for property,prop_control in self.prop_tournaments():
             data[property] = getattr(self, property)
         data["players"] = []
         for player in self.players:

@@ -55,6 +55,13 @@
             "first_name": "",
             "name": "azer",
             "sex": ""
+        },
+        "9": {
+            "birthday": "10/10/1000",
+            "elo": "c",
+            "first_name": "dos",
+            "name": "uno",
+            "sex": "c"
         }
     }
 }

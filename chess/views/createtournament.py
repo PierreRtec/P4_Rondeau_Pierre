@@ -15,8 +15,11 @@ class CreateTournament:
 
     def tournament_properties(self):
         tournament = {}
-        for tournament_prop in Tournament.prop_tournaments():
-            value = input('Entrez les informations suivantes: {}\n'.format(tournament_prop))
+        for tournament_prop, tournament_checker in Tournament.prop_tournaments():
+            value = input('Entrez les informations suivantes : {}\n'.format(tournament_prop))
+            if tournament_checker:
+                while not tournament_checker(value):
+                    value = input('Saisie incorrecte. \n Entrez les informations suivantes: {}\n'.format(tournament_prop))
             tournament[tournament_prop] = value
         listplayers = []
         while len(listplayers)!=8:

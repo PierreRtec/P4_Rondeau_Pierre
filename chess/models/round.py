@@ -40,8 +40,7 @@ class Round:
         players_list_1 = self.players[:nb_joueur // 2]
         players_list_2 = self.players[nb_joueur // 2:]
         self.roundd = zip(players_list_1, players_list_2)
-        # premier contre deuxième si pas jouer ensemble match précédent, ainsi de suite. avec un if (avoir un le score avant)
-        # MVC puis fini. !!!!!
+
 
     def set_scores(self, winners, tournament):
 
