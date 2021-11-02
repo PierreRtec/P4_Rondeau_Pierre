@@ -9,6 +9,9 @@ def valid(testt):
     except: return False    
     return True
 
+def type_time_control(ttc):
+    return ttc in ["blitz", "bullet", "rapid"]
+
 
 class Tournament:
     """
@@ -29,7 +32,7 @@ class Tournament:
 
     @classmethod
     def prop_tournaments(self):
-        return (('nom',None), ('lieu',None), ('date',valid), ('type de contrôle de temps',None), ('description',None))
+        return (('nom',None), ('lieu',None), ('date',valid), ('type de contrôle de temps',type_time_control), ('description',None))
     # contrôle de temps soit blitz / bullet / rapid 
 
     def __str__(self):
