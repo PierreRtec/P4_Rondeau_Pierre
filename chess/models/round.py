@@ -35,12 +35,17 @@ class Round:
 
     def gen_nm(self):
 
-        self.players.sort(key = lambda player: self.tournament.scores[player.name])
         nb_joueur = len(self.players)
         players_list_1 = self.players[:nb_joueur // 2]
         players_list_2 = self.players[nb_joueur // 2:]
-        self.roundd = zip(players_list_1, players_list_2)
+        self.roundd = [
+            [self.players[0],self.players[1]],
+            [self.players[2],self.players[3]],
+            [self.players[4],self.players[5]],
+            [self.players[6],self.players[7]],
+            ]
 
+        # une liste de liste trié affronté ou pas ?
 
     def set_scores(self, winners, tournament):
 

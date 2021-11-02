@@ -2,120 +2,54 @@
     "tournaments": {
         "1": {
             "date": "02/11/2021",
-            "description": "super tournois avec des animations qui font vraiment peur",
+            "description": "d",
             "lieu": "ici",
-            "nom": "Halloween tournament",
+            "nom": "Testtttttttttt",
             "players": [
-                "Mid",
-                "1",
-                "Thierry",
-                "dddd",
-                "Tad",
-                "test 1",
                 "Michel",
-                "azer"
+                "Thierry",
+                "Bel",
+                "Oli",
+                "Hal",
+                "Huit",
+                "Jill",
+                "Dern"
             ],
             "rounds": [
                 [
                     [
                         "Michel",
-                        "test 1",
+                        "Hal",
                         "1"
                     ],
                     [
                         "Thierry",
-                        "1",
-                        "1"
-                    ],
-                    [
-                        "Mid",
-                        "dddd",
-                        "3"
-                    ],
-                    [
-                        "Tad",
-                        "azer",
-                        "3"
-                    ]
-                ],
-                [
-                    [
-                        "Mid",
-                        "Michel",
-                        "1"
-                    ],
-                    [
-                        "Tad",
-                        "Thierry",
-                        "1"
-                    ],
-                    [
-                        "test 1",
-                        "dddd",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "azer",
-                        "1"
-                    ]
-                ],
-                [
-                    [
-                        "Mid",
-                        "Michel",
+                        "Huit",
                         "2"
                     ],
                     [
-                        "Tad",
-                        "Thierry",
+                        "Bel",
+                        "Jill",
                         "1"
                     ],
                     [
-                        "test 1",
-                        "dddd",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "azer",
-                        "2"
-                    ]
-                ],
-                [
-                    [
-                        "Mid",
-                        "Tad",
-                        "1"
-                    ],
-                    [
-                        "1",
-                        "test 1",
-                        "3"
-                    ],
-                    [
-                        "Thierry",
-                        "Michel",
-                        "2"
-                    ],
-                    [
-                        "dddd",
-                        "azer",
+                        "Oli",
+                        "Dern",
                         "1"
                     ]
                 ]
             ],
             "scores": {
-                "1": 1,
-                "Michel": 3,
-                "Mid": 2,
-                "Tad": 2,
-                "Thierry": 1,
-                "azer": 2.0,
-                "dddd": 2.0,
-                "test 1": 3.0
+                "Bel": 1,
+                "Dern": 0,
+                "Hal": 0,
+                "Huit": 1,
+                "Jill": 0,
+                "Michel": 1,
+                "Oli": 1,
+                "Thierry": 0
             },
-            "type de contr\u00f4le de temps": "blitz"
+            "type de contr\u00f4le de temps": "bullet"
         }
     }
 }

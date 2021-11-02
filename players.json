@@ -1,67 +1,60 @@
 {
     "players": {
         "1": {
-            "birthday": "10/10/2022",
-            "elo": 0,
-            "first_name": "d",
+            "birthday": "10/11/1010",
+            "elo": "0",
+            "first_name": "m",
             "name": "Michel",
-            "sex": "d"
-        },
-        "2": {
-            "birthday": "10/11/1020",
-            "elo": 0,
-            "first_name": "d",
-            "name": "Thierry",
-            "sex": "d"
-        },
-        "3": {
-            "birthday": "10/12/1222",
-            "elo": 0,
-            "first_name": "d",
-            "name": "Mid",
-            "sex": "d"
-        },
-        "4": {
-            "birthday": "10/10/1111",
-            "elo": 0,
-            "first_name": "d",
-            "name": "Tad",
-            "sex": "d"
-        },
-        "5": {
-            "birthday": "10/10/1234",
-            "elo": 0,
-            "first_name": "d",
-            "name": "test 1",
             "sex": "a"
         },
+        "2": {
+            "birthday": "11/11/1122",
+            "elo": "0",
+            "first_name": "T",
+            "name": "Thierry",
+            "sex": "a"
+        },
+        "3": {
+            "birthday": "22/10/2222",
+            "elo": "0",
+            "first_name": "B",
+            "name": "Bel",
+            "sex": "a"
+        },
+        "4": {
+            "birthday": "14/10/1411",
+            "elo": "0",
+            "first_name": "L",
+            "name": "Oli",
+            "sex": "a"
+        },
+        "5": {
+            "birthday": "15/08/1012",
+            "elo": "0",
+            "first_name": "L",
+            "name": "Hal",
+            "sex": "b"
+        },
         "6": {
-            "birthday": "10/11/1122",
-            "elo": 0,
-            "first_name": "1",
-            "name": "1",
-            "sex": "d"
+            "birthday": "11/11/0699",
+            "elo": "0",
+            "first_name": "H",
+            "name": "Huit",
+            "sex": "b"
         },
         "7": {
-            "birthday": "10/10/1125",
-            "elo": 0,
-            "first_name": "",
-            "name": "dddd",
-            "sex": "d"
+            "birthday": "16/06/2000",
+            "elo": "0",
+            "first_name": "l",
+            "name": "Jill",
+            "sex": "b"
         },
         "8": {
-            "birthday": "10/09/2021",
-            "elo": 0,
-            "first_name": "",
-            "name": "azer",
-            "sex": ""
-        },
-        "9": {
-            "birthday": "10/10/1000",
-            "elo": "c",
-            "first_name": "dos",
-            "name": "uno",
-            "sex": "c"
+            "birthday": "02/03/0405",
+            "elo": "0",
+            "first_name": "d",
+            "name": "Dern",
+            "sex": "b"
         }
     }
 }
