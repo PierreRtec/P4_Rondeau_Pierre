@@ -1,10 +1,10 @@
-"""Cette classe permet le controle de la creation de joueurs"""
-
 from chess.views.createplayer import CreatePlayer
 from chess.models.players import Player
 
 class CreatePlayerC:
-
+    """
+    Cette classe permet le controle de la creation de joueurs.
+    """
     def __init__(self, data):
         self.data = data
 
@@ -20,5 +20,3 @@ class CreatePlayerC:
             code_return = self.add_player(player_obj)
         createplayer_view.home(code_return)
         return "manageplayer"
-
-        

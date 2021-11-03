@@ -1,26 +1,19 @@
-"""
-Object view
-"""
-
 from chess.models.players import Player
 
 class CreatePlayer:
-
     """
-     Cette méthode permet de y
+     Cette méthode affiche l'option de création d'un joueur
     """
-
     def player_properties(self):
         player = {}
         for player_prop,prop_control in Player.my_properties():
             value = input('Entrez les informations suivantes: {}\n'.format(player_prop))
             if prop_control:
+                # si l'information saisie est incorrecte, boucle while d'erreur
                 while not prop_control(value):
                     value = input('Saisie incorrecte. \n Entrez les informations suivantes: {}\n'.format(player_prop))
             player[player_prop] = value
         return player
-
-# controle de saisie
 
     def home(self, code_return):
         player = {}

@@ -1,18 +1,18 @@
 from chess.models.players import Player
 
 
-
 class Round:
-    
+    """
+    Cette classe s'occupe de la génération des tours,
+    de la rencontre des joueurs, des scores, etc.
+    """
     def __init__(self, tournament):
-
         self.tournament = tournament
         self.players = tournament.players
         self.rmatchs = []
         self.players.sort(key = lambda player: player.elo)
 
     def __str__(self):
-
         all_match = self.tournament.rounds.copy()
         name_str = "liste des matchs : \n"
         for round in all_match:
@@ -27,14 +27,15 @@ class Round:
         return name_str
 
     def gen_firstmatch(self):
-        
+        # génération du premier tour d'un tournoi
         nb_joueur = len(self.players)
         players_list_1 = self.players[:nb_joueur // 2]
         players_list_2 = self.players[nb_joueur // 2:]
+        # tri par liste 1 et 2
         self.roundd = zip(players_list_1, players_list_2)
 
     def gen_nm(self):
-
+        # génération des tours suivants
         nb_joueur = len(self.players)
         players_list_1 = self.players[:nb_joueur // 2]
         players_list_2 = self.players[nb_joueur // 2:]
@@ -45,10 +46,8 @@ class Round:
             [self.players[6],self.players[7]],
             ]
 
-        # une liste de liste trié affronté ou pas ?
-
     def set_scores(self, winners, tournament):
-
+        # génération des scores
         for match,winner in winners:
             if winner == "1":
                 tournament.scores[match[0].name]+=1
@@ -60,5 +59,4 @@ class Round:
             self.rmatchs.append((match[0].name,match[1].name,winner))
 
     def serialize_round(self):
-
         return self.rmatchs

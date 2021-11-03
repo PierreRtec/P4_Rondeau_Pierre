@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: .\chess\models\players.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="chess.models.players.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               .\chess\models\players.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F401:</strong> 'tinydb.Query' imported but unused
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">tinydb</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">TinyDB</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="F841">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F841:</strong> local variable 'date' is assigned to but never used
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l7">
+                  <tt><i>7</i>         <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">test</span><span class="p">,</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  11
+               </span>
+               <strong>E303:</strong> too many blank lines (2)
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l20">
+                  <tt><i>20</i>     <span class="n">__db</span> <span class="o">=</span> <span class="n">TinyDB</span><span class="p">(</span><span class="s1">&#39;players.json&#39;</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;: &#39;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l24">
+                  <tt><i>24</i>     <span class="c1"># une seule liste pour tous les players</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l28">
+                  <tt><i>28</i>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l33">
+                  <tt><i>33</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l48">
+                  <tt><i>48</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l57">
+                  <tt><i>57</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l73">
+                  <tt><i>73</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l85">
+                  <tt><i>85</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l95">
+                  <tt><i>95</i>     <span class="nd">@classmethod</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (2):</p>
+               
+               <a href="chess.models.players.source.html#l105">
+                  <tt><i>105</i>     <span class="k">def</span> <span class="nf">serialize_player</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (3):</p>
+               
+               <a href="chess.models.players.source.html#l124">
+                  <tt><i>124</i> <span class="c1"># player.save_player() soit à la fin de prop ou après</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  10
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="chess.models.players.source.html#l7">
+                  <tt><i>7</i>         <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">test</span><span class="p">,</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="chess.models.players.source.html#l29">
+                  <tt><i>29</i>         <span class="k">for</span> <span class="nb">property</span><span class="p">,</span><span class="n">prop_control</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_properties</span><span class="p">():</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 5 places):</p>
+               
+               <a href="chess.models.players.source.html#l35">
+                  <tt><i>35</i>         <span class="k">return</span> <span class="p">((</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;birthday&#39;</span><span class="p">,</span><span class="n">valid_dob</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;elo&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="chess.models.players.source.html#l78">
+                  <tt><i>78</i>             <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">player</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">Player</span><span class="o">.</span><span class="n">listplayers</span><span class="p">()):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="chess.models.players.source.html#l90">
+                  <tt><i>90</i>             <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">player</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">Player</span><span class="o">.</span><span class="n">listplayers</span><span class="p">()):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="chess.models.players.source.html#l107">
+                  <tt><i>107</i>         <span class="k">for</span> <span class="nb">property</span><span class="p">,</span><span class="n">prop_control</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_properties</span><span class="p">():</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  8
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l2">
+                  <tt><i>2</i> <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l8">
+                  <tt><i>8</i>     <span class="k">except</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l13">
+                  <tt><i>13</i>     <span class="sd">&quot;&quot;&quot; </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l16">
+                  <tt><i>16</i> <span class="sd">    Si ils participent ou non à un tournoi. </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l25">
+                  <tt><i>25</i>     <span class="n">players</span> <span class="o">=</span> <span class="p">[]</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l80">
+                  <tt><i>80</i>                     <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">players</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>        </tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l92">
+                  <tt><i>92</i>                     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">players</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>        </tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l109">
+                  <tt><i>109</i>         <span class="k">return</span> <span class="n">data</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E251">
+               <span class="count sev-2">
+                  4
+               </span>
+               <strong>E251:</strong> unexpected spaces around keyword / parameter equals
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="chess.models.players.source.html#l49">
+                  <tt><i>49</i>     <span class="k">def</span> <span class="nf">listplayers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needsort</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="chess.models.players.source.html#l52">
+                  <tt><i>52</i>             <span class="n">new_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">player</span><span class="p">:</span> <span class="n">player</span><span class="o">.</span><span class="n">elo</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>E501:</strong> line too long (83 > 79 characters)
+               
+                  (and 2 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (83 > 79 characters):</p>
+               
+               <a href="chess.models.players.source.html#l20">
+                  <tt><i>20</i>     <span class="n">__db</span> <span class="o">=</span> <span class="n">TinyDB</span><span class="p">(</span><span class="s1">&#39;players.json&#39;</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;: &#39;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (103 > 79 characters):</p>
+               
+               <a href="chess.models.players.source.html#l35">
+                  <tt><i>35</i>         <span class="k">return</span> <span class="p">((</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;birthday&#39;</span><span class="p">,</span><span class="n">valid_dob</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;elo&#39;</span><span class="p">,</span><span class="kc">None</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (135 > 79 characters):</p>
+               
+               <a href="chess.models.players.source.html#l43">
+                  <tt><i>43</i>     <span class="c1"># pour les controles --&gt; ajouter une fonction en dehors de la classe du modèle pour un &quot;None&quot; si besoin de control (puis modif MVC)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>No newline at end of file (in 3 places):</p>
+               
+               <a href="chess.models.players.source.html#l125">
+                  <tt><i>125</i> <span class="c1"># traitement à part de la creation de joueur uuid (identifiant)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l15">
+                  <tt><i>15</i> <span class="sd">    </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="chess.models.players.source.html#l121">
+                  <tt><i>121</i>         </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E211">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E211:</strong> whitespace before '['
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l108">
+                  <tt><i>108</i>             <span class="n">data</span> <span class="p">[</span><span class="nb">property</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">property</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E225">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E225:</strong> missing whitespace around operator
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l119">
+                  <tt><i>119</i>             <span class="k">if</span> <span class="n">player</span><span class="o">.</span><span class="n">name</span><span class="o">==</span><span class="n">player_name</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E701">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E701:</strong> multiple statements on one line (colon)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l8">
+                  <tt><i>8</i>     <span class="k">except</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>    </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E722">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E722:</strong> do not use bare 'except'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="chess.models.players.source.html#l8">
+                  <tt><i>8</i>     <span class="k">except</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>    </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

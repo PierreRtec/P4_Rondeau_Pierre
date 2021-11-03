@@ -11,7 +11,6 @@ class ManageTournamentC:
         self.data = data
 
     def call(self):
-
         managetournaments_view = ManageTournament()
         choice = managetournaments_view.home()
         if choice == "1":

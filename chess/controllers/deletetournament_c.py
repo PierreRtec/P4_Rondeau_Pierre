@@ -12,7 +12,6 @@ class DeleteTournamentC:
         self.data = data
 
     def call(self):
-
         deletetournament_view = DeleteTournament(self.data)
         choice = deletetournament_view.home()
         # suppression user choice

@@ -1,5 +1,3 @@
-"""Cette classe permet le controle de la creation de tournois"""
-
 from chess.views.createtournament import CreateTournament
 from chess.models.tournaments import Tournament
 from chess.models.players import Player
@@ -7,7 +5,9 @@ from chess.controllers.manageround_c import ManageRoundC
 
 
 class CreateTournamentC:
-
+    """
+    Cette classe permet le controle de la creation de tournois.
+    """
     def __init__(self, data):
         self.data = data
 

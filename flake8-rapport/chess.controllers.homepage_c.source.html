@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>.\chess\controllers\homepage_c.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <h1>
+            <a href="chess.controllers.homepage_c.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               .\chess\controllers\homepage_c.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="sd">&quot;&quot;&quot;Cette classe permet le controle la page d&#39;accueil&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> &nbsp;</tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> <span class="kn">from</span> <span class="nn">chess.views.homepage</span> <span class="kn">import</span> <span class="n">Homepage</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev-1  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-1">
+                        F401
+                     </span>
+                     'chess.models.players.Player' imported but unused</li>
+               
+               </ul><tt><i>4</i> <span class="kn">from</span> <span class="nn">chess.models.players</span> <span class="kn">import</span> <span class="n">Player</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> &nbsp;</tt>
+            </div>
+            <div id="l6"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 1</li>
+               
+               </ul><tt><i>6</i> <span class="k">class</span> <span class="nc">HomepageC</span><span class="p">:</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> &nbsp;</tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i>         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> &nbsp;</tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i>     <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i> &nbsp;</tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i>         <span class="n">homepage_view</span> <span class="o">=</span> <span class="n">Homepage</span><span class="p">()</span></tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i>         <span class="n">choice</span> <span class="o">=</span> <span class="n">homepage_view</span><span class="o">.</span><span class="n">home</span><span class="p">()</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev- "><tt><i>15</i>         <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i>             <span class="k">return</span> <span class="s2">&quot;manageplayer&quot;</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>         <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev- "><tt><i>18</i>             <span class="k">return</span> <span class="s2">&quot;managetournament&quot;</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i>         <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&quot;3&quot;</span><span class="p">:</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W292
+                     </span>
+                     No newline at end of file</li>
+               
+               </ul><tt><i>20</i>             <span class="k">return</span> <span class="s2">&quot;exit&quot;</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>
