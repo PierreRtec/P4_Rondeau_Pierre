@@ -1,13 +1,16 @@
-from chess.views.deleteplayer import DeletePlayer
-from chess.views.homepage import Homepage
-from chess.views.manageplayer import ManagePlayer
-from chess.views.managetournaments import ManageTournament
 from chess.models.players import Player
 from chess.models.tournaments import Tournament
-from chess.views.createtournament import CreateTournament
-from chess.views.listtournaments import ListTournaments
-from chess.views.deletetournaments import DeleteTournament
 from chess.controllers import *
+from chess.controllers.listplayers_c import ListPlayersC
+from chess.controllers.createplayer_c import CreatePlayerC
+from chess.controllers.deleteplayer_c import DeletePlayerC
+from chess.controllers.homepage_c import HomepageC
+from chess.controllers.manageplayer_c import ManagePlayerC
+from chess.controllers.createtournament_c import CreateTournamentC
+from chess.controllers.managetournaments_c import ManageTournamentC
+from chess.controllers.listtournaments_c import ListTournamentsC
+from chess.controllers.deletetournament_c import DeleteTournamentC
+from chess.controllers.manageround_c import ManageRoundC
 
 
 menu_principal = {
