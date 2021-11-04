@@ -1,12 +1,12 @@
-from tinydb import Query, TinyDB
+from tinydb import TinyDB
 from chess.models.players import Player
 from datetime import datetime
 
 
 def valid(testt):
     try:
-        date = datetime.strptime(testt, "%d/%m/%Y")
-    except Exception as date:
+        datetime.strptime(testt, "%d/%m/%Y")
+    except Exception:
         return False
     return True
 

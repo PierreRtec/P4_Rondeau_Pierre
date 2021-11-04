@@ -1,11 +1,11 @@
-from tinydb import Query, TinyDB
+from tinydb import TinyDB
 from datetime import datetime
 
 
 def valid_dob(test):
     try:
-        date = datetime.strptime(test, "%d/%m/%Y")
-    except Exception as ex:
+        datetime.strptime(test, "%d/%m/%Y")
+    except Exception:
         return False
     return True
 
