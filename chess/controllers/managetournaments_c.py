@@ -1,6 +1,7 @@
 """Cette classe permet le controle la page de gestion des tournois"""
 
 from chess.views.managetournaments import ManageTournament
+
 # from chess.models.tournaments import Tournament
 # from chess.controllers.manageround_c import ManageRoundC
 
