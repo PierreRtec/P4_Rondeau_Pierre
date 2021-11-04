@@ -5,11 +5,11 @@ name = "pypi"
 
 [packages]
 flake8 = "*"
-tinydb = "*"
 flake8-html = "*"
 pipenv = "*"
 pycodestyle = "*"
 black = "*"
+tinydb = "*"
 
 [dev-packages]
 
