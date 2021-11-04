@@ -1,9 +1,11 @@
 from chess.views.manageplayer import ManagePlayer
 
+
 class ManagePlayerC:
     """
     Cette classe permet le controle la liste des tournois.
     """
+
     def __init__(self, data):
         self.data = data
 

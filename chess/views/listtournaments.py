@@ -2,11 +2,10 @@
 
 from chess.models.tournaments import Tournament
 
-class ListTournaments:
 
+class ListTournaments:
     def __init__(self, data):
         self.data = data
-
 
     def home(self):
         print("Liste des tournois :")
@@ -16,7 +15,7 @@ class ListTournaments:
 
     def select_tournament(self):
         print("Choisir le numéro du tournoi : ")
-        for index,tournament in enumerate(Tournament.listtournaments()):
-            print(index,tournament)
+        for index, tournament in enumerate(Tournament.listtournaments()):
+            print(index, tournament)
         position_tourn = input("Position du tournoi :")
         return position_tourn

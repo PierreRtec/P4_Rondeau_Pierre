@@ -5,37 +5,47 @@ from datetime import datetime
 
 def valid(testt):
     try:
-        date = datetime.strptime(testt,"%d/%m/%Y")
-    except: return False    
+        date = datetime.strptime(testt, "%d/%m/%Y")
+    except:
+        return False
     return True
+
 
 def type_time_control(ttc):
     return ttc in ["blitz", "bullet", "rapid"]
+
 
 class Tournament:
     """
     Cette classe va s'occuper de gérer tous les tournois.
     """
-    __db = TinyDB('tournaments.json', sort_keys=True, indent=4, separators=(',', ': '))
-    __db = __db.table('tournaments')
+
+    __db = TinyDB("tournaments.json", sort_keys=True, indent=4, separators=(",", ": "))
+    __db = __db.table("tournaments")
     # une seule liste pour tous les tournois
     tournaments = []
 
     def __init__(self, **kwargs):
-        for property,prop_control in self.prop_tournaments():
+        for property, prop_control in self.prop_tournaments():
             setattr(self, property, kwargs.get(property, ""))
-        self.players = kwargs.get("players",[])
-        self.rounds = kwargs.get("rounds",[])
-        self.scores = kwargs.get("scores",{})
+        self.players = kwargs.get("players", [])
+        self.rounds = kwargs.get("rounds", [])
+        self.scores = kwargs.get("scores", {})
 
     @classmethod
     def prop_tournaments(self):
         # gestion des propriétés d'un tournoi
-        return (('nom',None), ('lieu',None), ('date',valid), ('type de contrôle de temps',type_time_control), ('description',None))
+        return (
+            ("nom", None),
+            ("lieu", None),
+            ("date", valid),
+            ("type de contrôle de temps", type_time_control),
+            ("description", None),
+        )
 
     def __str__(self):
         name_str = "nom du tournoi : {}\n".format(self.nom)
-        name_str+= "liste des joueurs du tournoi :\n"
+        name_str += "liste des joueurs du tournoi :\n"
         for player in self.players:
             name_str += str(player)
         return name_str
@@ -73,7 +83,7 @@ class Tournament:
 
     def serialize_tournament(self):
         data = {}
-        for property,prop_control in self.prop_tournaments():
+        for property, prop_control in self.prop_tournaments():
             data[property] = getattr(self, property)
         data["players"] = []
         for player in self.players:
@@ -90,5 +100,5 @@ class Tournament:
             players = []
             for player_name in tournament["players"]:
                 players.append(Player.pickle(player_name))
-            tournament["players"]=players
+            tournament["players"] = players
             self.tournaments.append(Tournament(**tournament))

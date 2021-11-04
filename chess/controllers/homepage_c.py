@@ -1,6 +1,7 @@
 from chess.views.homepage import Homepage
 from chess.models.players import Player
 
+
 class HomepageC:
     """
     Cette classe permet le controle la page d'accueil.

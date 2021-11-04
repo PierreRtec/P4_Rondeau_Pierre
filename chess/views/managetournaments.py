@@ -1,7 +1,7 @@
 """Object view"""
 
-class ManageTournament:
 
+class ManageTournament:
     def home(self):
 
         print("Menu de gestion des tournois")

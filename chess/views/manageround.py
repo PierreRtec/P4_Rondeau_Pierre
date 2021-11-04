@@ -2,7 +2,6 @@
 
 
 class ManageRound:
-
     def __init__(self, oround):
         self.oround = oround
 
@@ -15,13 +14,16 @@ class ManageRound:
             winners.append((match, winner))
         return winners
 
-
     def m_elo(self, players, tournament):
-        
+
         dict_elo = {}
-        
+
         for player in players:
-            print("nom : {}, score : {}, elo : {}".format(player.name,tournament.scores[player.name], player.elo))
+            print(
+                "nom : {}, score : {}, elo : {}".format(
+                    player.name, tournament.scores[player.name], player.elo
+                )
+            )
 
         for player in players:
             print("nom : {}".format(player.name))

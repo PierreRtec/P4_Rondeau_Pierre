@@ -1,38 +1,47 @@
 from tinydb import Query, TinyDB
-from datetime import datetime 
+from datetime import datetime
 
 
 def valid_dob(test):
     try:
-        date = datetime.strptime(test,"%d/%m/%Y")
-    except: return False    
+        date = datetime.strptime(test, "%d/%m/%Y")
+    except:
+        return False
     return True
 
+
 class Player:
-    """ 
-    Cette classe va s'occuper de gérer tous les joueurs.
-    Si ils participent ou non à un tournoi. 
     """
-    __db = TinyDB('players.json', sort_keys=True, indent=4, separators=(',', ': '))
-    __db = __db.table('players')
+    Cette classe va s'occuper de gérer tous les joueurs.
+    Si ils participent ou non à un tournoi.
+    """
+
+    __db = TinyDB("players.json", sort_keys=True, indent=4, separators=(",", ": "))
+    __db = __db.table("players")
     # une seule liste pour tous les players
-    players = [] 
+    players = []
 
     def __init__(self, **kwargs):
-        for property,prop_control in self.my_properties():
+        for property, prop_control in self.my_properties():
             setattr(self, property, kwargs.get(property, ""))
 
     @classmethod
     def my_properties(self):
         # gestion des propriétés d'un joueur
-        return (('name',None), ('first_name',None), ('birthday',valid_dob), ('sex',None), ('elo',None))
+        return (
+            ("name", None),
+            ("first_name", None),
+            ("birthday", valid_dob),
+            ("sex", None),
+            ("elo", None),
+        )
         return "nom joueur : {}\n".format(self.name)
 
     @classmethod
-    def listplayers(self, needsort = False):
+    def listplayers(self, needsort=False):
         if needsort:
             new_list = [player for player in self.players]
-            new_list.sort(key = lambda player: player.elo)
+            new_list.sort(key=lambda player: player.elo)
             return new_list
         return self.players
 
@@ -54,9 +63,9 @@ class Player:
         if del_method == "b":
             del self.players[int(choice)]
         else:
-            for index,player in enumerate(Player.listplayers()):
+            for index, player in enumerate(Player.listplayers()):
                 if player.name == choice:
-                    del self.players[index]        
+                    del self.players[index]
                     break
         self.save_all_players()
 
@@ -65,9 +74,9 @@ class Player:
         if select_method == "b":
             return self.players[int(choice)]
         else:
-            for index,player in enumerate(Player.listplayers()):
+            for index, player in enumerate(Player.listplayers()):
                 if player.name == choice:
-                    return self.players[index]        
+                    return self.players[index]
 
     @classmethod
     def save_all_players(self):
@@ -80,9 +89,9 @@ class Player:
 
     def serialize_player(self):
         data = {}
-        for property,prop_control in self.my_properties():
-            data [property] = getattr(self, property)
-        return data 
+        for property, prop_control in self.my_properties():
+            data[property] = getattr(self, property)
+        return data
 
     @classmethod
     def load_player(self):
@@ -92,5 +101,5 @@ class Player:
     @classmethod
     def pickle(self, player_name):
         for player in self.players:
-            if player.name==player_name:
+            if player.name == player_name:
                 return player

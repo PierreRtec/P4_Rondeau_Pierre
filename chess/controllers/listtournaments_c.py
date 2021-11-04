@@ -1,9 +1,11 @@
 from chess.views.listtournaments import ListTournaments
 
+
 class ListTournamentsC:
     """
     Cette classe permet le controle la liste des tournois.
     """
+
     def __init__(self, data):
         self.data = data
 

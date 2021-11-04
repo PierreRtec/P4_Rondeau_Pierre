@@ -6,7 +6,6 @@ from chess.controllers.manageround_c import ManageRoundC
 
 
 class ManageTournamentC:
-
     def __init__(self, data):
         self.data = data
 

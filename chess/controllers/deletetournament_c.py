@@ -6,8 +6,8 @@ from chess.models.tournaments import Tournament
 Test
 """
 
-class DeleteTournamentC:
 
+class DeleteTournamentC:
     def __init__(self, data):
         self.data = data
 

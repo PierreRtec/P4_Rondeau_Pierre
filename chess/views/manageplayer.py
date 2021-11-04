@@ -1,7 +1,7 @@
 """Object view"""
 
-class ManagePlayer:
 
+class ManagePlayer:
     def home(self):
 
         print("Menu de gestion des joueurs")

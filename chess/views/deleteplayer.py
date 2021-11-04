@@ -7,7 +7,6 @@ from chess.views.listplayers import ListPlayers
 
 
 class DeletePlayer:
-
     def __init__(self, data):
         self.data = data
 
@@ -15,4 +14,4 @@ class DeletePlayer:
         print("Bienvenue dans la page de suppression de joueur")
         listplayers_view = ListPlayers(self.data)
         choice = listplayers_view.select_player()
-        return choice 
+        return choice

@@ -1,9 +1,7 @@
-
 """Object view"""
 
 
 class Homepage:
-
     def home(self):
         # bienvenue n'est pas un choix
         print("Bienvenue dans la page d'accueil")
