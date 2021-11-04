@@ -1,4 +1,4 @@
-from chess.models.players import Player
+# from chess.models.players import Player
 
 
 class Round:
@@ -31,15 +31,15 @@ class Round:
         # génération du premier tour d'un tournoi
         nb_joueur = len(self.players)
         players_list_1 = self.players[: nb_joueur // 2]
-        players_list_2 = self.players[nb_joueur // 2 :]
+        players_list_2 = self.players[nb_joueur // 2:]
         # tri par liste 1 et 2
         self.roundd = zip(players_list_1, players_list_2)
 
     def gen_nm(self):
         # génération des tours suivants
-        nb_joueur = len(self.players)
-        players_list_1 = self.players[: nb_joueur // 2]
-        players_list_2 = self.players[nb_joueur // 2 :]
+        # nb_joueur = len(self.players)
+        # players_list_1 = self.players[: nb_joueur // 2]
+        # players_list_2 = self.players[nb_joueur // 2:]
         self.roundd = [
             [self.players[0], self.players[1]],
             [self.players[2], self.players[3]],

@@ -1,2 +1,2 @@
-from .players import Player
-from .tournaments import Tournament
+# from .players import Player
+# from .tournaments import Tournament

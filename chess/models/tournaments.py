@@ -6,7 +6,7 @@ from datetime import datetime
 def valid(testt):
     try:
         date = datetime.strptime(testt, "%d/%m/%Y")
-    except:
+    except Exception as date:
         return False
     return True
 

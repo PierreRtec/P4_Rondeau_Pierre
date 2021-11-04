@@ -1,7 +1,7 @@
 from chess.views.createtournament import CreateTournament
 from chess.models.tournaments import Tournament
 from chess.models.players import Player
-from chess.controllers.manageround_c import ManageRoundC
+# from chess.controllers.manageround_c import ManageRoundC
 
 
 class CreateTournamentC:

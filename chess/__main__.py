@@ -1,6 +1,6 @@
 from chess.models.players import Player
 from chess.models.tournaments import Tournament
-from chess.controllers import *
+# from chess.controllers import *
 from chess.controllers.listplayers_c import ListPlayersC
 from chess.controllers.createplayer_c import CreatePlayerC
 from chess.controllers.deleteplayer_c import DeletePlayerC

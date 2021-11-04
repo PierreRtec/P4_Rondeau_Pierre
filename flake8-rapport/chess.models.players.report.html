@@ -50,6 +50,35 @@ window.addEventListener('DOMContentLoaded', function () {
          <ul id="index">
          
          <li>
+            <a data-code="F841">
+               <span class="count sev-1">
+                  2
+               </span>
+               <strong>F841:</strong> local variable 'date' is assigned to but never used
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Local variable 'date' is assigned to but never used:</p>
+               
+               <a href="chess.models.players.source.html#l7">
+                  <tt><i>7</i>         <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Local variable 'ex' is assigned to but never used:</p>
+               
+               <a href="chess.models.players.source.html#l8">
+                  <tt><i>8</i>     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
             <a data-code="F401">
                <span class="count sev-1">
                   1
@@ -62,42 +91,6 @@ window.addEventListener('DOMContentLoaded', function () {
                
                <a href="chess.models.players.source.html#l1">
                   <tt><i>1</i> <span class="kn">from</span> <span class="nn">tinydb</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">TinyDB</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="F841">
-               <span class="count sev-1">
-                  1
-               </span>
-               <strong>F841:</strong> local variable 'date' is assigned to but never used
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="chess.models.players.source.html#l7">
-                  <tt><i>7</i>         <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="E722">
-               <span class="count sev-2">
-                  1
-               </span>
-               <strong>E722:</strong> do not use bare 'except'
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="chess.models.players.source.html#l8">
-                  <tt><i>8</i>     <span class="k">except</span><span class="p">:</span></tt>
                </a>
             </li>
             </ul>

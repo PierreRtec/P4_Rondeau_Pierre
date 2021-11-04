@@ -2,7 +2,7 @@
 Object view
 """
 
-from chess.models.players import Player
+# from chess.models.players import Player
 from chess.views.listplayers import ListPlayers
 
 

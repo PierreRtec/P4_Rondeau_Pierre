@@ -5,7 +5,7 @@ from datetime import datetime
 def valid_dob(test):
     try:
         date = datetime.strptime(test, "%d/%m/%Y")
-    except:
+    except Exception as ex:
         return False
     return True
 
