@@ -75,3 +75,20 @@ exclude =
 	test.py
 
 max-line-length = 119
+
+
+#### Pour générer des rapport flake8, suivez les instructions :
+
+Dans le terminal de commande de votre IDE, tappez :
+
+pipenv install flake8
+pipenv install flake8-html
+
+flake8 --format=html --htmldir=flake8-rapport
+
+
+#### Pour plus de précisision sur la pep8, assurez-vous d'avoir le module "black" et entrez ceci dans votre terminal :
+
+black chess
+
+Cela exécutera le module sur notre application. Si l'application s'appelait chessprogr alors ce serait "black chessprogr".
