@@ -21,7 +21,12 @@ class Tournament:
     Cette classe va s'occuper de gérer tous les tournois.
     """
 
-    __db = TinyDB("tournaments.json", sort_keys=True, indent=4, separators=(",", ": "))
+    __db = TinyDB(
+        "tournaments.json",
+        sort_keys=True,
+        indent=4,
+        separators=(",", ": ")
+        )
     __db = __db.table("tournaments")
     # une seule liste pour tous les tournois
     tournaments = []

@@ -27,7 +27,8 @@ class ManageRoundC:
                 choice = input("Lancer un nouveau tour ?")
             if choice == "o":
                 if len(self.tournament.rounds) == 0:
-                    oround.gen_firstmatch()  # gen_firstmatch ou gen_match (à faire en plus)
+                    oround.gen_firstmatch()
+                    # gen_firstmatch ou gen_match (à faire en plus)
                     winners = round_view.make_round()
                     oround.set_scores(winners, self.tournament)
                 else:
@@ -40,9 +41,13 @@ class ManageRoundC:
         # si les 4 tours sont joués, alors on attribue un elo
         # le classement peut être mesuré par palier de niveau du joeur :
         # 1000, 1600, 2000, 2400, 2500, 2800
-        # débutant, joueur de club, expert, maître international, grand-maître international,
+        # débutant,
+        # joueur de club,
+        # expert, maître international,
+        # grand-maître international,
         # champion du monde d'échecs
-        # l'utilisateur de l'application décide du elo de chaque joueurs à la fin
+        # l'utilisateur de l'application,
+        # décide du elo de chaque joueurs à la fin
         # d'un tournoi et peut revenir à tout moment dessus
         if len(self.tournament.rounds) == 4:
             elo = round_view.m_elo(self.tournament.players, self.tournament)

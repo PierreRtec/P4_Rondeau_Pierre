@@ -5,16 +5,18 @@ class CreatePlayer:
     """
     Cette classe permet l'affichage de l'écran de la création d'un joeur.
     """
-
     def player_properties(self):
         player = {}
         for player_prop, prop_control in Player.my_properties():
-            value = input("Entrez les informations suivantes: {}\n".format(player_prop))
+            value = input(
+                "Entrez les informations suivantes: {}\n".format(player_prop)
+                )
             if prop_control:
                 # si l'information saisie est incorrecte, boucle while d'erreur
                 while not prop_control(value):
                     value = input(
-                        "Saisie incorrecte. \n Entrez les informations suivantes: {}\n".format(
+                        "Saisie incorrecte."
+                        "\n Entrez les informations suivantes: {}\n".format(
                             player_prop
                         )
                     )
