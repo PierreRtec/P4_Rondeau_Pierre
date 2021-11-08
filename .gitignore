@@ -5,4 +5,3 @@ __pycache__
 *.jpg
 *flake8-rapport
 *.json
-*.cfg

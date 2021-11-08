@@ -7,8 +7,12 @@ name = "pypi"
 flake8 = "*"
 flake8-html = "*"
 pipenv = "*"
+<<<<<<< HEAD
 black = "*"
+=======
+>>>>>>> f3ef91510ae0169ae731aa16ba72cdeec8fece33
 tinydb = "*"
+black = "*"
 
 [dev-packages]
 
