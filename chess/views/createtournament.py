@@ -1,16 +1,11 @@
-"""
-Object view
-"""
 from chess.views.listplayers import ListPlayers
 from chess.models.tournaments import Tournament
 
 
 class CreateTournament:
-
     """
-    Cette méthode permet de x
+    Cette classe permet l'affichage de l'écran de la création d'un tounoi.
     """
-
     def __init__(self, data):
         self.data = data
 

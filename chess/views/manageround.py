@@ -2,6 +2,9 @@
 
 
 class ManageRound:
+    """
+    Cette classe permet l'affichage de l'écran de gestion des tours.
+    """
     def __init__(self, oround):
         self.oround = oround
 

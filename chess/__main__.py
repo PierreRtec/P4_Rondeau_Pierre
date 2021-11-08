@@ -1,6 +1,5 @@
 from chess.models.players import Player
 from chess.models.tournaments import Tournament
-
 # from chess.controllers import *
 from chess.controllers.listplayers_c import ListPlayersC
 from chess.controllers.createplayer_c import CreatePlayerC
@@ -29,30 +28,19 @@ menu_principal = {
 
 
 class ChessProgram:
+    """
+    Gestion chessprogram par le 'main'.
+    """    
     def __init__(self):
         self.data = {}
         Player.load_player()
         Tournament.load_tournament()
 
-    # c'est ce qu'il faut save (regarder si obj pas déjà présent) self.data du load fichier sérialisé
-
     def main(self):
-
         activ_view = "homepage"
         while activ_view != "exit":
-            # quand exit proposer de sauvegarder
-            # try bloc logique
-            # try:
             activ_controller = menu_principal.get(activ_view)
             activ_view = activ_controller(self.data).call()
-
-
-# sauvegarder le self.data serialiser
-
-# except Exception as my_exception:
-# print(my_exception)
-# activ_view = "homepage"
-
 
 if __name__ == "__main__":
     chess_program = ChessProgram()

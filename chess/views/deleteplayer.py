@@ -1,12 +1,11 @@
-"""
-Object view
-"""
-
 # from chess.models.players import Player
 from chess.views.listplayers import ListPlayers
 
 
 class DeletePlayer:
+    """
+    Cette classe permet l'affichage de l'écran de suppression d'un joueur.
+    """
     def __init__(self, data):
         self.data = data
 

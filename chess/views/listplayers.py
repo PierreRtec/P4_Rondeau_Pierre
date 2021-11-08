@@ -1,9 +1,10 @@
-"""Object view"""
-
 from chess.models.players import Player
 
 
 class ListPlayers:
+    """
+    Cette classe permet l'affichage de l'écran de liste des joueurs.
+    """
     def __init__(self, data):
         self.data = data
 
