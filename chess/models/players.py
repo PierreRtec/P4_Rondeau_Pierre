@@ -25,6 +25,9 @@ class Player:
         for property, prop_control in self.my_properties():
             setattr(self, property, kwargs.get(property, ""))
 
+    def __str__(self):
+        return self.name
+
     @classmethod
     def my_properties(self):
         # gestion des propriétés d'un joueur

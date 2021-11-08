@@ -12,6 +12,7 @@ def valid(testt):
 
 
 def type_time_control(ttc):
+    # méthode pour le type de contrôle de temps
     return ttc in ["blitz", "bullet", "rapid"]
 
 
