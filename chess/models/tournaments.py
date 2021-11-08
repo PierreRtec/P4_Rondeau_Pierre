@@ -48,7 +48,7 @@ class Tournament:
         name_str = "nom du tournoi : {}\n".format(self.nom)
         name_str += "liste des joueurs du tournoi :\n"
         for player in self.players:
-            name_str += str(player)
+            name_str += str(player) + "\n"
         return name_str
 
     @classmethod
