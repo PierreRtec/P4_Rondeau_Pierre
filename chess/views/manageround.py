@@ -13,10 +13,7 @@ class ManageRound:
 
         winners = []
         for match in self.oround.roundd:
-            print(
-                "Match entre deux personnes"
-                "\n 1:{}/2:{}/3:Égalité=".format(*match)
-                )
+            print("Match entre deux personnes" "\n 1:{}/2:{}/3:Égalité=".format(*match))
             winner = input("Qui gagne ?")
             winners.append((match, winner))
         return winners

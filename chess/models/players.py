@@ -15,12 +15,8 @@ class Player:
     Cette classe va s'occuper de gérer tous les joueurs.
     Si ils participent ou non à un tournoi.
     """
-    __db = TinyDB(
-        "players.json",
-        sort_keys=True,
-        indent=4,
-        separators=(",", ": ")
-        )
+
+    __db = TinyDB("players.json", sort_keys=True, indent=4, separators=(",", ": "))
     __db = __db.table("players")
     # une seule liste pour tous les players
     players = []
