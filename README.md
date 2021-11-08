@@ -52,14 +52,10 @@ Quel est votre choix ?
 
 ##### Pour un aperçu des affichages avant le code, télécharger ce diapo : [Chess Program OC P4  Maquette 2.0](https://docs.google.com/presentation/d/1a-6vUmawzazSRycqUz_SB1P1LcgC3qgEoveW_9HPyxg/edit?usp=sharing)
 
-##### Pour la génération de rapports flake8 :
+### Pour la génération de rapports flake8, entrez dans le terminal :
 
-COMMANDE création de rapport HTML : 
-
-flake8 --format=html --htmldir=flake8-rapport
-
---> pipenv install flake8
---> pipenv install flake8-html
++ pipenv install flake8
++ pipenv install flake8-html
 
 créer un fichier qui s'appelle "setup.cfg"
 
@@ -75,3 +71,13 @@ exclude =
 	test.py
 
 max-line-length = 119
+
+#### COMMANDE création de rapport HTML >_
+
+flake8 --format=html --htmldir=flake8-rapport
+
+#### Pour plus de précisision sur la pep8, assurez-vous d'avoir le module "black" et entrez ceci dans votre terminal :
+
+black chess
+
+Cela exécutera le module sur notre application. Si l'application s'appelait chessprogr alors ce serait "black chessprogr".
