@@ -5,6 +5,7 @@ class Homepage:
     """
     Cette classe permet l'affichage de l'écran d'accueil.
     """
+
     def home(self):
         # bienvenue n'est pas un choix
         print("Bienvenue dans la page d'accueil")

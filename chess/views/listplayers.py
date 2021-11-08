@@ -5,6 +5,7 @@ class ListPlayers:
     """
     Cette classe permet l'affichage de l'écran de liste des joueurs.
     """
+
     def __init__(self, data):
         self.data = data
 

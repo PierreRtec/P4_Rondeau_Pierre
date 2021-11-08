@@ -7,6 +7,7 @@ class ListTournaments:
     """
     Cette classe permet l'affichage de l'écran de la liste des tournois.
     """
+
     def __init__(self, data):
         self.data = data
 

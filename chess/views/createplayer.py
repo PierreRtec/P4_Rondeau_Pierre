@@ -5,6 +5,7 @@ class CreatePlayer:
     """
     Cette classe permet l'affichage de l'écran de la création d'un joeur.
     """
+
     def player_properties(self):
         player = {}
         for player_prop, prop_control in Player.my_properties():

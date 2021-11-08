@@ -5,6 +5,7 @@ class DeleteTournament:
     """
     Cette classe permet l'affichage de l'écran de suppression d'un tournoi.
     """
+
     def __init__(self, data):
         self.data = data
 

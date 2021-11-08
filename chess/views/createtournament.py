@@ -6,6 +6,7 @@ class CreateTournament:
     """
     Cette classe permet l'affichage de l'écran de la création d'un tounoi.
     """
+
     def __init__(self, data):
         self.data = data
 
