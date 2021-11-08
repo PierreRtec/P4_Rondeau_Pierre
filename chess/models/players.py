@@ -38,7 +38,6 @@ class Player:
             ("sex", None),
             ("elo", None),
         )
-        return "nom joueur : {}\n".format(self.name)
 
     @classmethod
     def listplayers(self, needsort=False):
