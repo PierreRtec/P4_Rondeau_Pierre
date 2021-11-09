@@ -11,6 +11,5 @@ class ListTournamentsC:
 
     def call(self):
         listtournaments_view = ListTournaments(self.data)
-        choice = listtournaments_view.home()
-        if choice == listtournaments_view.home():
-            return "managetournament"
+        listtournaments_view.home()
+        return "managetournament"
