@@ -39,7 +39,7 @@ class ManageRoundC:
                 self.tournament.rounds.append(oround.serialize_round())
                 Tournament.save_all_tournaments()
         # si les 4 tours sont joués, alors on attribue un elo
-        # le classement peut être mesuré par palier de niveau du joeur :
+        # le classement peut être mesuré par palier de niveau du joueur :
         # 1000, 1600, 2000, 2400, 2500, 2800
         # débutant,
         # joueur de club,
