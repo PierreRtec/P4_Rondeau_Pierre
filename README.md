@@ -9,9 +9,11 @@
 ## Comment installer l'environnement virtuel ?
 Dans votre terminal :
 
-* pip install pipenv
-* pipenv shell
-* pipenv install
+> pip install pipenv
+
+> pipenv shell
+
+> pipenv install
 
 ### Pour plus de précisions : https://pypi.org/project/pipenv/
 ---
@@ -19,8 +21,10 @@ Dans votre terminal :
 ## Comment lancer le programme "chess" ?
 Dans votre terminal :
 
-* py -m chess
-* _tappez le chiffre que vous voulez pour vous déplacer dans les menus_.
+> py -m chess
+
+> _tappez le chiffre que vous voulez pour vous déplacer dans les menus_.
+
 ---
 
 ## Affichages & Menus d'utilisation de l'application
@@ -74,10 +78,10 @@ max-line-length = 119
 
 #### COMMANDE création de rapport HTML >_
 
-flake8 --format=html --htmldir=flake8-rapport
+> flake8 --format=html --htmldir=flake8-rapport
 
 #### Pour plus de précisision sur la pep8, assurez-vous d'avoir le module "black" et entrez ceci dans votre terminal :
 
-black chess
+> black chess
 
 Cela exécutera le module sur notre application. Si l'application s'appelait chessprogr alors ce serait "black chessprogr".
